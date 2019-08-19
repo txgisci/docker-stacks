@@ -10,7 +10,10 @@ RUN conda install -c conda-forge --quiet --yes \
     'nbgrader' \
     'rasterio' \
     'geopandas' \
-    'rasterstats' && \
+    'rasterstats' \
+    'matplotlib' \
+    'folium' \
+    'rise' && \
     conda clean --all -f -y && \
     fix-permissions $CONDA_DIR && \
     fix-permissions /home/$NB_USER
